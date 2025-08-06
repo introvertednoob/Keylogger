@@ -1,0 +1,8 @@
+key = 'api_key'
+username = 'usr'
+password = 'pwd'
+
+# remember to zlib.compress() your credentials!!!
+# you can do this through the credential server creator (creds_creator.py), or you can do it manually.
+# example: zlib.compress(b"key = 'api_key'\nusername = 'usr'\npassword = 'pwd'")
+# NEVER HARDCODE YOUR OWN CREDENTIALS INTO THE KEYLOGGER FILE ITSELF.
